@@ -7,4 +7,9 @@ const seconds = document.getElementById("seconds");
 
 const loading = document.getElementById("loading");
 
-
+window.addEventListener("load",()=>{
+   loading.style.display = "block";
+   setTimeout(()=>{
+       loading.style.display = "none";
+   },1000)
+});
